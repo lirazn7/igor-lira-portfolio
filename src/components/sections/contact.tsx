@@ -87,7 +87,7 @@ export function Contact() {
         body: JSON.stringify({ name, email, message, honeypot }),
       });
 
-      const data = (await response.json()) as { ok?: boolean; error?: string };
+      await response.json();
 
       if (response.status === 503) {
         setStatus("errorConfig");
