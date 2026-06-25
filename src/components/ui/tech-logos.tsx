@@ -1,92 +1,47 @@
 import { cn } from "@/lib/utils";
 
-type TechLogoProps = React.SVGProps<SVGSVGElement>;
+// 1. Identificadores das tecnologias que estás a usar
+export type TechLogoId =
+  | "aws"
+  | "java"
+  | "supabase"
+  | "firebase"
+  | "spring"
+  | "python"
+  | "javascript"
+  | "react"
+  | "html"
+  | "css"
+  | "git";
 
-export type TechLogoId = "aws" | "java" | "supabase" | "firebase";
+// 2. Mapeamento direto para os URLs da CDN do Devicon (Cores originais e oficiais)
+const cdnUrls: Record<TechLogoId, string> = {
+  aws: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+  java: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+  supabase: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+  firebase: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+  spring: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
+  python: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+  javascript: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+  react: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+  html: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+  css: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+  git: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+};
 
-export function AwsLogo({ className, ...props }: TechLogoProps) {
-  return (
-    <svg viewBox="0 0 24 24" className={cn("size-5", className)} aria-hidden="true" {...props}>
-      <path
-        fill="#FF9900"
-        d="M6.763 17.396c-.285.162-.653.073-.825-.205a.64.64 0 0 1 .205-.826c2.772-1.58 6.562-1.933 9.688-1.058.32.097.503.43.406.75a.615.615 0 0 1-.75.406c-2.786-.84-6.15-.53-8.724.933zm-.96-2.292a.48.48 0 0 1-.673-.12 9.52 9.52 0 0 1-1.12-1.44c-.12-.18-.073-.42.107-.54.18-.12.42-.073.54.107.32.427.693.84 1.12 1.227a.48.48 0 0 1-.12.673.48.48 0 0 1-.24.093zm11.307 1.44c-2.92 2.147-7.227 2.827-10.907 1.547a.48.48 0 0 1-.3-.607.48.48 0 0 1 .607-.3c3.36 1.173 7.227.547 9.814-1.347a.48.48 0 0 1 .673.12.48.48 0 0 1-.12.673l.233-.086zM20.64 14.4a.48.48 0 0 1-.607.3 12.48 12.48 0 0 1-3.36-.84.48.48 0 0 1-.12-.673.48.48 0 0 1 .673-.12c1.013.393 2.12.693 3.267.84a.48.48 0 0 1 .3.607.48.48 0 0 1-.153.086z"
-      />
-      <path
-        fill="#252F3E"
-        className="dark:fill-[#FF9900]"
-        d="M13.5 4.5c4.5 0 7.5 2.07 7.5 5.25 0 2.25-1.5 4.35-4.05 5.1l.45 1.05c.075.18-.03.39-.21.39h-.36c-.12 0-.24-.06-.3-.18l-.54-1.26c-.75.12-1.56.18-2.4.18-4.5 0-7.5-2.07-7.5-5.25S9 4.5 13.5 4.5zm0 9c3.45 0 6-1.5 6-3.75S16.95 5.25 13.5 5.25 7.5 6.75 7.5 9s2.55 3.75 6 3.75z"
-      />
-    </svg>
-  );
-}
-
-export function JavaLogo({ className, ...props }: TechLogoProps) {
-  return (
-    <svg viewBox="0 0 24 24" className={cn("size-5", className)} aria-hidden="true" {...props}>
-      <path
-        fill="#EA2D2E"
-        d="M8.851 18.564s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.309 2.533-.309 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.668 0-.001-8.216 2.051-4.287 6.553M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.82M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892M17.116 17.584c4.503-2.34 2.424-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.539 1.644-2.469 6.197-2.761 5.19-7.627"
-      />
-      <path
-        fill="#EA2D2E"
-        d="M9.912 19.206s-.282.225.208.271c.758.069 2.851.084 4.668-.042.352-.027.778-.084.778-.084s-.409.174-.702.298c-1.794.705-5.255.615-6.357.336-.218-.056-.195-.24-.195-.24"
-      />
-    </svg>
-  );
-}
-
-export function SupabaseLogo({ className, ...props }: TechLogoProps) {
-  return (
-    <svg viewBox="0 0 24 24" className={cn("size-5", className)} aria-hidden="true" {...props}>
-      <path
-        fill="url(#supabase-gradient)"
-        d="M17.958 18.77c-.27.34-.82.16-.82-.22V5.45c0-.38.49-.57.78-.3l5.74 5.74c.3.3.3.78 0 1.08l-5.7 6.8z"
-      />
-      <path
-        fill="#3ECF8E"
-        d="M6.042 5.23c.27-.34.82-.16.82.22v13.1c0 .38-.49.57-.78.3L.302 13.15a.77.77 0 0 1 0-1.08l5.74-5.84z"
-      />
-      <defs>
-        <linearGradient id="supabase-gradient" x1="12" y1="4" x2="12" y2="20" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#249361" />
-          <stop offset="1" stopColor="#3ECF8E" />
-        </linearGradient>
-      </defs>
-    </svg>
-  );
-}
-
-export function FirebaseLogo({ className, ...props }: TechLogoProps) {
-  return (
-    <svg viewBox="0 0 24 24" className={cn("size-5", className)} aria-hidden="true" {...props}>
-      <path
-        fill="#FFA000"
-        d="M5.27 16.74 11.1 3.5c.18-.42.74-.42.92 0l5.83 13.24-6.58-3.5z"
-      />
-      <path
-        fill="#FFCA28"
-        d="M5.27 16.74 1.5 15.2c-.35-.16-.35-.64 0-.8l9.52-4.4-5.75 6.74z"
-      />
-      <path
-        fill="#FFA000"
-        d="M5.27 16.74h13.46l-3.77 1.54c-.35.14-.74.14-1.09 0l-8.6-3.54z"
-      />
-      <path
-        fill="#F57C00"
-        d="M12.01 3.5 5.27 16.74l6.74-3.54V3.5z"
-      />
-    </svg>
-  );
-}
-
-const logoMap = {
-  aws: AwsLogo,
-  java: JavaLogo,
-  supabase: SupabaseLogo,
-  firebase: FirebaseLogo,
-} as const;
-
+// 3. Componente que desenha a imagem
 export function TechLogo({ id, className }: { id: TechLogoId; className?: string }) {
-  const Logo = logoMap[id];
-  return <Logo className={className} />;
+  const url = cdnUrls[id];
+
+  // Se o ID não existir no nosso dicionário, não desenha nada para evitar erros no site
+  if (!url) return null;
+
+  return (
+    <img
+      src={url}
+      alt={`Logótipo oficial da tecnologia ${id}`}
+      className={cn("size-5 object-contain", className)}
+      loading="lazy"
+    />
+  );
 }
