@@ -141,7 +141,7 @@ export const translations: Record<Locale, Translation> = {
           type: "work",
           title: "Young Apprentice - AI Solutions | AI Enterprise Adoption",
           organization: "Grupo QuintoAndar",
-          period: "mar de 2026 — o momento · 4 meses",
+          period: "mar de 2026 — Presente",
           location: "São Paulo, Brasil · Remoto",
           description:
             "Apoio ao Program Manager na experimentação de ferramentas de IA e na adoção de soluções internas, impactando produtividade e eficiência. Criação de projeto para automatizar o fluxo de submissão de PoCs internos. Parceria com times de RPA, People Insights, Cybersecurity e engenharia. Gestão de planilhas de despesas, análise de adoção de IA e testes com Gemini Enterprise e Claude Cowork. Liderança de pesquisa com focus group e desenvolvimento de dashboard interativo para o time executivo visualizar uso do Gemini.",
@@ -200,6 +200,15 @@ export const translations: Record<Locale, Translation> = {
       title: "Projetos",
       subtitle: "Uma seleção dos trabalhos que desenvolvi — do conceito ao deploy.",
       items: [
+        {
+          title: "Assistente Financeiro IA",
+          description:
+            "Aplicação mobile-first para gestão automatizada de gastos. Utiliza Visão Computacional (Llama 4 Vision) para ler notas fiscais, extraindo valores e categorizando despesas. Conta com dashboard analítico de gráficos, banco de dados assíncrono e sistema de segurança de acesso privado.",
+          tags: ["Next.js", "Tailwind CSS", "Supabase", "Groq AI", "Chart.js"],
+          github: "https://github.com/lirazn7/app-financas",
+          gradient: "from-emerald-500/80 to-green-900/80",
+          live: "https://app-financas-opal-psi.vercel.app",
+        },
         {
           title: "Sistema de Lanchonete",
           description:
@@ -346,7 +355,7 @@ export const translations: Record<Locale, Translation> = {
           type: "work",
           title: "Young Apprentice - AI Solutions | AI Enterprise Adoption",
           organization: "Grupo QuintoAndar",
-          period: "Mar 2026 — Present · 4 months",
+          period: "Mar 2026 — Present",
           location: "São Paulo, Brazil · Remote",
           description:
             "Assisting the Program Manager in experimenting with new AI tools and supporting internal AI adoption to improve productivity and efficiency. Built a project to automate the internal Proof of Concept submission flow. Partnered with RPA, People Insights, Cybersecurity, and engineering teams. Managed expense spreadsheets, analyzed AI tool adoption, and tested Gemini Enterprise and Claude Cowork. Led focus group research and built an interactive dashboard for the executive team to visualize Gemini usage.",
@@ -405,6 +414,15 @@ export const translations: Record<Locale, Translation> = {
       title: "Projects",
       subtitle: "A selection of work I've built — from concept to deployment.",
       items: [
+        {
+          title: "AI Finance Assistant",
+          description:
+            "Mobile-first application for automated expense management. Uses Computer Vision (Llama 4 Vision) to read receipts, extracting values and categorizing expenses. Features an analytical charts dashboard, async database, and private access security system.",
+          tags: ["Next.js", "Tailwind CSS", "Supabase", "Groq AI", "Chart.js"],
+          github: "https://github.com/lirazn7/app-financas",
+          gradient: "from-emerald-500/80 to-green-900/80",
+          live: "https://app-financas-opal-psi.vercel.app",
+        },
         {
           title: "Snack Bar System",
           description:
@@ -551,7 +569,7 @@ export const translations: Record<Locale, Translation> = {
           type: "work",
           title: "Young Apprentice - AI Solutions | AI Enterprise Adoption",
           organization: "Grupo QuintoAndar",
-          period: "mar 2026 — actualidad · 4 meses",
+          period: "mar 2026 — Actualidad",
           location: "São Paulo, Brasil · Remoto",
           description:
             "Apoyo al Program Manager en la experimentación de herramientas de IA y adopción de soluciones internas para mejorar la productividad. Creación de un proyecto para automatizar el flujo de envío de PoCs internos. Colaboración con equipos de RPA, People Insights, Cybersecurity e ingeniería. Gestión de hojas de gastos, análisis de adopción de IA y pruebas con Gemini Enterprise y Claude Cowork. Liderazgo de investigación con focus group y desarrollo de dashboard interactivo para el equipo ejecutivo.",
@@ -610,6 +628,15 @@ export const translations: Record<Locale, Translation> = {
       title: "Proyectos",
       subtitle: "Una selección de trabajos que he desarrollado — del concepto al deploy.",
       items: [
+        {
+          title: "Asistente Financiero IA",
+          description:
+            "Aplicación mobile-first para gestión automatizada de gastos. Utiliza Visión Computacional (Llama 4 Vision) para leer recibos, extrayendo valores y categorizando gastos. Cuenta con un dashboard analítico, base de datos asíncrona y sistema de seguridad de acceso privado.",
+          tags: ["Next.js", "Tailwind CSS", "Supabase", "Groq AI", "Chart.js"],
+          github: "https://github.com/lirazn7/app-financas",
+          gradient: "from-emerald-500/80 to-green-900/80",
+          live: "https://app-financas-opal-psi.vercel.app",
+        },
         {
           title: "Sistema de Lanchonete",
           description:
