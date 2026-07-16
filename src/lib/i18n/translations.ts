@@ -249,6 +249,14 @@ export const translations: Record<Locale, Translation> = {
           github: "https://github.com/lirazn7/Site-de-Loja-Igor-s-Store",
           gradient: "from-pink-500/80 to-rose-900/80",
         },
+        {
+        title: "DressCode - Landing Page",
+        description: "Landing page desenvolvida para a marca de moda DressCode. Possui uma interface completa com vitrine virtual, feed de produtos, perfil de usuário e telas de login, construída inteiramente com HTML5 e CSS3 puros focando em design responsivo.",
+        image: "/projects/dresscode.png", // Nome da imagem salva na pasta public
+        tags: ["HTML5", "CSS3", "Web Design", "UI/UX"],
+        github: "https://github.com/lirazn7/LandingPage-DressCode",
+        live: "https://landing-page-dress-code.vercel.app/"
+        }
       ],
     },
     skills: {
@@ -463,6 +471,14 @@ export const translations: Record<Locale, Translation> = {
           github: "https://github.com/lirazn7/Site-de-Loja-Igor-s-Store",
           gradient: "from-pink-500/80 to-rose-900/80",
         },
+        {
+        title: "DressCode - Landing Page",
+        description: "Landing page developed for the fashion brand DressCode. It features a complete interface with a virtual storefront, product feed, user profile, and login screens, built entirely with pure HTML5 and CSS3 focusing on responsive design.",
+        image: "/projects/dresscode.png", // Deve ser o mesmo nome
+        tags: ["HTML5", "CSS3", "Web Design", "UI/UX"],
+        github: "https://github.com/lirazn7/LandingPage-DressCode",
+        live: "https://landing-page-dress-code.vercel.app/" // Opcional
+        }
       ],
     },
     skills: {
@@ -668,6 +684,7 @@ export const translations: Record<Locale, Translation> = {
           tags: ["Java", "POO", "Algoritmos"],
           github: "https://github.com/lirazn7/Repositorio-de-Aprendizagem",
           gradient: "from-emerald-500/80 to-teal-900/80",
+          live: "https://lirazn7.github.io/Site-de-Loja-Igor-s-Store/"
         },
         {
           title: "Igor's Store",
@@ -677,6 +694,7 @@ export const translations: Record<Locale, Translation> = {
           github: "https://github.com/lirazn7/Site-de-Loja-Igor-s-Store",
           gradient: "from-pink-500/80 to-rose-900/80",
         },
+
       ],
     },
     skills: {

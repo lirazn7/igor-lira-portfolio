@@ -124,12 +124,15 @@ export function Projects() {
                       </span>
                     </>
                   )}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4 z-20">
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4 z-20 pointer-events-none">
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noreferrer"
-                      className="p-3 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
+                      className="pointer-events-auto relative z-50 p-3 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
+                      style={{ transform: "translateZ(50px)" }}
+                      onMouseMove={(e) => e.stopPropagation()}
+                      onClick={(e) => e.stopPropagation()}
                       aria-label="GitHub"
                     >
                       <GitHubIcon className="w-5 h-5 text-white" />
@@ -139,13 +142,17 @@ export function Projects() {
                         href={project.live}
                         target="_blank"
                         rel="noreferrer"
-                        className="p-3 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
+                        className="pointer-events-auto relative z-50 p-3 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
+                        style={{ transform: "translateZ(50px)" }}
+                        onMouseMove={(e) => e.stopPropagation()}
+                        onClick={(e) => e.stopPropagation()}
                         aria-label="Demo"
                       >
                         <ExternalLink className="w-5 h-5 text-white" />
                       </a>
                     )}
                   </div>
+                  
                 </div>
 
                 <div className="p-6 flex flex-col flex-1">
