@@ -252,10 +252,10 @@ export const translations: Record<Locale, Translation> = {
         {
         title: "DressCode - Landing Page",
         description: "Landing page desenvolvida para a marca de moda DressCode. Possui uma interface completa com vitrine virtual, feed de produtos, perfil de usuário e telas de login, construída inteiramente com HTML5 e CSS3 puros focando em design responsivo.",
-        image: "/projects/dresscode.png", // Nome da imagem salva na pasta public
         tags: ["HTML5", "CSS3", "Web Design", "UI/UX"],
         github: "https://github.com/lirazn7/LandingPage-DressCode",
-        live: "https://landing-page-dress-code.vercel.app/"
+        live: "https://landing-page-dress-code.vercel.app/",
+        gradient: "from-pink-500/80 to-rose-900/80",  
         }
       ],
     },
@@ -474,10 +474,10 @@ export const translations: Record<Locale, Translation> = {
         {
         title: "DressCode - Landing Page",
         description: "Landing page developed for the fashion brand DressCode. It features a complete interface with a virtual storefront, product feed, user profile, and login screens, built entirely with pure HTML5 and CSS3 focusing on responsive design.",
-        image: "/projects/dresscode.png", // Deve ser o mesmo nome
-        tags: ["HTML5", "CSS3", "Web Design", "UI/UX"],
+        tags: ["HTML5", "CSS3"],
         github: "https://github.com/lirazn7/LandingPage-DressCode",
-        live: "https://landing-page-dress-code.vercel.app/" // Opcional
+        live: "https://landing-page-dress-code.vercel.app/",
+        gradient: "from-red-500/80 to-black-900/80",
         }
       ],
     },
