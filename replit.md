@@ -1,45 +1,41 @@
-# [Project name]
+# Portfólio Igor Lira
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Portfólio pessoal de Igor Lira — desenvolvedor backend (Java/Spring) — com seções hero, sobre, experiência, projetos, skills e contato. Portado da Vercel (Next.js) para Vite + React.
 
 ## Run & Operate
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
+- Workflows: `artifacts/portfolio: web` (frontend, path `/`), `artifacts/api-server: API Server` (path `/api`)
 - `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
+- Env: `RESEND_API_KEY` (envio de email do formulário de contato), opcionais `CONTACT_EMAIL`, `RESEND_FROM_EMAIL`
 
 ## Stack
 
 - pnpm workspaces, Node.js 24, TypeScript 5.9
-- API: Express 5
-- DB: PostgreSQL + Drizzle ORM
-- Validation: Zod (`zod/v4`), `drizzle-zod`
-- API codegen: Orval (from OpenAPI spec)
-- Build: esbuild (CJS bundle)
+- Frontend: Vite + React 19, Tailwind v4, GSAP, framer-motion, next-themes (dark mode), i18n próprio (PT/EN/ES)
+- API: Express 5 (`artifacts/api-server`), Resend para email
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/portfolio/src/components/sections/` — seções da página (hero, about, experience, projects, skills, contact)
+- `artifacts/portfolio/src/lib/i18n/` — traduções PT/EN/ES
+- `artifacts/portfolio/src/config/site.ts` — dados do site (nav, links)
+- `artifacts/api-server/src/routes/contact.ts` — endpoint POST /api/contact (Resend)
+- `.migration-backup/` — código original importado da Vercel (Next.js)
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- App single-page (sem router) — a página original Next.js era uma única rota com âncoras
+- Rota de contato inlined no Express (sem OpenAPI spec) por ser endpoint único e simples, espelhando o route.ts original
+- `next/image`/`next/link` substituídos por `<img>`/`<a>`; tema e estilos originais preservados em `src/index.css`
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+Página única com animações GSAP, alternância de tema claro/escuro, seletor de idioma (PT/EN/ES) e formulário de contato que envia email via Resend.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+_(vazio)_
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
-
-## Pointers
-
-- See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details
+- Sem RESEND_API_KEY o formulário de contato responde 503 ("Serviço de email não configurado") — comportamento igual ao original
