@@ -98,6 +98,7 @@ export function Projects() {
               style={{ transformStyle: "preserve-3d" }}
             >
               <div className="relative overflow-hidden rounded-xl border bg-card shadow-sm hover:shadow-xl transition-shadow duration-500 h-full flex flex-col">
+                {/* Cover image / gradient */}
                 <div
                   className={cn(
                     "h-48 relative overflow-hidden",
@@ -122,37 +123,9 @@ export function Projects() {
                       </span>
                     </>
                   )}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4 z-20 pointer-events-none">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="pointer-events-auto relative z-50 p-3 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
-                      style={{ transform: "translateZ(50px)" }}
-                      onMouseMove={(e) => e.stopPropagation()}
-                      onClick={(e) => e.stopPropagation()}
-                      aria-label="GitHub"
-                    >
-                      <GitHubIcon className="w-5 h-5 text-white" />
-                    </a>
-                    {project.live && (
-                      <a
-                        href={project.live}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="pointer-events-auto relative z-50 p-3 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
-                        style={{ transform: "translateZ(50px)" }}
-                        onMouseMove={(e) => e.stopPropagation()}
-                        onClick={(e) => e.stopPropagation()}
-                        aria-label="Demo"
-                      >
-                        <ExternalLink className="w-5 h-5 text-white" />
-                      </a>
-                    )}
-                  </div>
-                  
                 </div>
 
+                {/* Content */}
                 <div className="p-6 flex flex-col flex-1">
                   <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
                     {project.title}
@@ -160,7 +133,9 @@ export function Projects() {
                   <p className="text-muted-foreground text-sm mb-4 flex-1">
                     {project.description}
                   </p>
-                  <div className="flex flex-wrap gap-2">
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
@@ -169,6 +144,36 @@ export function Projects() {
                         {tag}
                       </span>
                     ))}
+                  </div>
+
+                  {/* Action buttons — always visible and clickable */}
+                  <div className="flex gap-2 pt-2 border-t border-border/50">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      onMouseMove={(e) => e.stopPropagation()}
+                      className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-md bg-muted hover:bg-muted/80 text-foreground transition-colors"
+                      aria-label="Ver no GitHub"
+                    >
+                      <GitHubIcon className="w-3.5 h-3.5" />
+                      GitHub
+                    </a>
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        onMouseMove={(e) => e.stopPropagation()}
+                        className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-md bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
+                        aria-label="Ver demo"
+                      >
+                        <ExternalLink className="w-3.5 h-3.5" />
+                        Live
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

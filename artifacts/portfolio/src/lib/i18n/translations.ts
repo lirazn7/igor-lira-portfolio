@@ -258,6 +258,14 @@ export const translations: Record<Locale, Translation> = {
           gradient: "from-pink-500/80 to-rose-900/80",
         },
         {
+          title: "Prompt Architect",
+          description: "Ferramenta web de IA que transforma uma descrição em linguagem natural em um prompt estruturado e otimizado. O usuário descreve o que precisa, a IA (Groq) monta o prompt perfeito. Suporte multilíngue (PT, EN, ES) com integração backend via API.",
+          tags: ["JavaScript", "HTML", "CSS", "Groq AI"],
+          github: "https://github.com/lirazn7/projeto-shiva",
+          live: "https://projeto-shiva.vercel.app",
+          gradient: "from-violet-500/80 to-indigo-900/80",
+        },
+        {
           title: "Lira Burger",
           description: "Site fictício de hamburgueria com cardápio interativo, design moderno e animações. Desenvolvido com HTML, CSS e Tailwind CSS, explorando layout responsivo e experiência do usuário.",
           tags: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
@@ -494,6 +502,14 @@ export const translations: Record<Locale, Translation> = {
           gradient: "from-pink-500/80 to-rose-900/80",
         },
         {
+          title: "Prompt Architect",
+          description: "AI-powered web tool that turns a plain-language description into a structured, optimized prompt. Describe what you need, and the AI (Groq) builds the perfect prompt. Multilingual support (PT, EN, ES) with backend API integration.",
+          tags: ["JavaScript", "HTML", "CSS", "Groq AI"],
+          github: "https://github.com/lirazn7/projeto-shiva",
+          live: "https://projeto-shiva.vercel.app",
+          gradient: "from-violet-500/80 to-indigo-900/80",
+        },
+        {
           title: "Lira Burger",
           description: "Fictional burger restaurant website with an interactive menu, modern design, and animations. Built with HTML, CSS, and Tailwind CSS, exploring responsive layout and user experience.",
           tags: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
@@ -728,6 +744,14 @@ export const translations: Record<Locale, Translation> = {
           github: "https://github.com/lirazn7/LandingPage-DressCode",
           live: "https://landing-page-dress-code.vercel.app/",
           gradient: "from-pink-500/80 to-rose-900/80",
+        },
+        {
+          title: "Prompt Architect",
+          description: "Herramienta web de IA que transforma una descripción en lenguaje natural en un prompt estructurado y optimizado. El usuario describe lo que necesita y la IA (Groq) construye el prompt perfecto. Soporte multilingüe (PT, EN, ES) con integración backend vía API.",
+          tags: ["JavaScript", "HTML", "CSS", "Groq AI"],
+          github: "https://github.com/lirazn7/projeto-shiva",
+          live: "https://projeto-shiva.vercel.app",
+          gradient: "from-violet-500/80 to-indigo-900/80",
         },
         {
           title: "Lira Burger",
