@@ -250,13 +250,27 @@ export const translations: Record<Locale, Translation> = {
           gradient: "from-pink-500/80 to-rose-900/80",
         },
         {
-        title: "DressCode - Landing Page",
-        description: "Landing page desenvolvida para a marca de moda DressCode. Possui uma interface completa com vitrine virtual, feed de produtos, perfil de usuário e telas de login, construída inteiramente com HTML5 e CSS3 puros focando em design responsivo.",
-        tags: ["HTML5", "CSS3", "Web Design", "UI/UX"],
-        github: "https://github.com/lirazn7/LandingPage-DressCode",
-        live: "https://landing-page-dress-code.vercel.app/",
-        gradient: "from-pink-500/80 to-rose-900/80",  
-        }
+          title: "DressCode - Landing Page",
+          description: "Landing page desenvolvida para a marca de moda DressCode. Possui uma interface completa com vitrine virtual, feed de produtos, perfil de usuário e telas de login, construída inteiramente com HTML5 e CSS3 puros focando em design responsivo.",
+          tags: ["HTML5", "CSS3", "Web Design", "UI/UX"],
+          github: "https://github.com/lirazn7/LandingPage-DressCode",
+          live: "https://landing-page-dress-code.vercel.app/",
+          gradient: "from-pink-500/80 to-rose-900/80",
+        },
+        {
+          title: "Lira Burger",
+          description: "Site fictício de hamburgueria com cardápio interativo, design moderno e animações. Desenvolvido com HTML, CSS e Tailwind CSS, explorando layout responsivo e experiência do usuário.",
+          tags: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
+          github: "https://github.com/lirazn7/projeto-ficticio-hamburgueria",
+          gradient: "from-yellow-500/80 to-amber-900/80",
+        },
+        {
+          title: "Beach House Display",
+          description: "Aplicação web para exibição de propriedade de aluguel de temporada (Casa Juquehy). Apresenta comodidades, galeria e informações da casa de praia, desenvolvida com TypeScript e React.",
+          tags: ["TypeScript", "React", "Vite", "Tailwind CSS"],
+          github: "https://github.com/lirazn7/Beach-House-Display",
+          gradient: "from-sky-400/80 to-cyan-900/80",
+        },
       ],
     },
     skills: {
@@ -308,7 +322,7 @@ export const translations: Record<Locale, Translation> = {
       errorConfig: "Formulário temporariamente indisponível. Use o email direto abaixo.",
     },
     footer: {
-      copyright: "© 2026 Igor Lira. Feito com Next.js e GSAP.",
+      copyright: "© 2026 Igor Lira. Feito com Vite e GSAP.",
     },
     developer: {
       name: "Igor Lira",
@@ -472,13 +486,27 @@ export const translations: Record<Locale, Translation> = {
           gradient: "from-pink-500/80 to-rose-900/80",
         },
         {
-        title: "DressCode - Landing Page",
-        description: "Landing page developed for the fashion brand DressCode. It features a complete interface with a virtual storefront, product feed, user profile, and login screens, built entirely with pure HTML5 and CSS3 focusing on responsive design.",
-        tags: ["HTML5", "CSS3"],
-        github: "https://github.com/lirazn7/LandingPage-DressCode",
-        live: "https://landing-page-dress-code.vercel.app/",
-        gradient: "from-red-500/80 to-black-900/80",
-        }
+          title: "DressCode - Landing Page",
+          description: "Landing page developed for the fashion brand DressCode. It features a complete interface with a virtual storefront, product feed, user profile, and login screens, built entirely with pure HTML5 and CSS3 focusing on responsive design.",
+          tags: ["HTML5", "CSS3", "Web Design", "UI/UX"],
+          github: "https://github.com/lirazn7/LandingPage-DressCode",
+          live: "https://landing-page-dress-code.vercel.app/",
+          gradient: "from-pink-500/80 to-rose-900/80",
+        },
+        {
+          title: "Lira Burger",
+          description: "Fictional burger restaurant website with an interactive menu, modern design, and animations. Built with HTML, CSS, and Tailwind CSS, exploring responsive layout and user experience.",
+          tags: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
+          github: "https://github.com/lirazn7/projeto-ficticio-hamburgueria",
+          gradient: "from-yellow-500/80 to-amber-900/80",
+        },
+        {
+          title: "Beach House Display",
+          description: "Web application to showcase a vacation rental property (Casa Juquehy). Displays amenities, photo gallery, and beach house details, built with TypeScript and React.",
+          tags: ["TypeScript", "React", "Vite", "Tailwind CSS"],
+          github: "https://github.com/lirazn7/Beach-House-Display",
+          gradient: "from-sky-400/80 to-cyan-900/80",
+        },
       ],
     },
     skills: {
@@ -530,7 +558,7 @@ export const translations: Record<Locale, Translation> = {
       errorConfig: "Form temporarily unavailable. Please use the direct email below.",
     },
     footer: {
-      copyright: "© 2026 Igor Lira. Built with Next.js and GSAP.",
+      copyright: "© 2026 Igor Lira. Built with Vite and GSAP.",
     },
     developer: {
       name: "Igor Lira",
@@ -684,7 +712,6 @@ export const translations: Record<Locale, Translation> = {
           tags: ["Java", "POO", "Algoritmos"],
           github: "https://github.com/lirazn7/Repositorio-de-Aprendizagem",
           gradient: "from-emerald-500/80 to-teal-900/80",
-          live: "https://lirazn7.github.io/Site-de-Loja-Igor-s-Store/"
         },
         {
           title: "Igor's Store",
@@ -694,7 +721,28 @@ export const translations: Record<Locale, Translation> = {
           github: "https://github.com/lirazn7/Site-de-Loja-Igor-s-Store",
           gradient: "from-pink-500/80 to-rose-900/80",
         },
-
+        {
+          title: "DressCode - Landing Page",
+          description: "Landing page desarrollada para la marca de moda DressCode. Cuenta con una interfaz completa con vitrina virtual, feed de productos, perfil de usuario y pantallas de login, construida con HTML5 y CSS3 puros con enfoque en diseño responsivo.",
+          tags: ["HTML5", "CSS3", "Web Design", "UI/UX"],
+          github: "https://github.com/lirazn7/LandingPage-DressCode",
+          live: "https://landing-page-dress-code.vercel.app/",
+          gradient: "from-pink-500/80 to-rose-900/80",
+        },
+        {
+          title: "Lira Burger",
+          description: "Sitio web ficticio de hamburguería con menú interactivo, diseño moderno y animaciones. Desarrollado con HTML, CSS y Tailwind CSS, explorando diseño responsivo y experiencia de usuario.",
+          tags: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
+          github: "https://github.com/lirazn7/projeto-ficticio-hamburgueria",
+          gradient: "from-yellow-500/80 to-amber-900/80",
+        },
+        {
+          title: "Beach House Display",
+          description: "Aplicación web para mostrar una propiedad de alquiler vacacional (Casa Juquehy). Presenta comodidades, galería de fotos e información de la casa de playa, desarrollada con TypeScript y React.",
+          tags: ["TypeScript", "React", "Vite", "Tailwind CSS"],
+          github: "https://github.com/lirazn7/Beach-House-Display",
+          gradient: "from-sky-400/80 to-cyan-900/80",
+        },
       ],
     },
     skills: {
@@ -746,7 +794,7 @@ export const translations: Record<Locale, Translation> = {
       errorConfig: "Formulario temporalmente no disponible. Usa el email directo abajo.",
     },
     footer: {
-      copyright: "© 2026 Igor Lira. Hecho con Next.js y GSAP.",
+      copyright: "© 2026 Igor Lira. Hecho con Vite y GSAP.",
     },
     developer: {
       name: "Igor Lira",
