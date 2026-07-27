@@ -274,7 +274,7 @@ export const translations: Record<Locale, Translation> = {
           gradient: "from-yellow-500/80 to-amber-900/80",
         },
         {
-          title: "Juquehy",
+          title: "Beach House Juquehy",
           description: "Aplicação web para exibição de uma casa de aluguel de temporada na praia de Juquehy. Apresenta comodidades, galeria de fotos e informações sobre a casa, desenvolvida com TypeScript e React.",
           tags: ["TypeScript", "React", "Vite", "Tailwind CSS"],
           github: "https://github.com/lirazn7/Beach-House-Display",
@@ -520,7 +520,7 @@ export const translations: Record<Locale, Translation> = {
           gradient: "from-yellow-500/80 to-amber-900/80",
         },
         {
-          title: "Juquehy",
+          title: "Beach House Juquehy",
           description: "Web application to showcase a vacation rental beach house in Juquehy. Displays amenities, photo gallery, and property details, built with TypeScript and React.",
           tags: ["TypeScript", "React", "Vite", "Tailwind CSS"],
           github: "https://github.com/lirazn7/Beach-House-Display",
@@ -766,7 +766,7 @@ export const translations: Record<Locale, Translation> = {
           gradient: "from-yellow-500/80 to-amber-900/80",
         },
         {
-          title: "Juquehy",
+          title: "Beach House Juquehy",
           description: "Aplicación web para mostrar una casa de alquiler de temporada en la playa de Juquehy. Presenta comodidades, galería de fotos e información de la propiedad, desarrollada con TypeScript y React.",
           tags: ["TypeScript", "React", "Vite", "Tailwind CSS"],
           github: "https://github.com/lirazn7/Beach-House-Display",
