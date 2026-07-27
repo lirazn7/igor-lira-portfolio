@@ -267,9 +267,10 @@ export const translations: Record<Locale, Translation> = {
         },
         {
           title: "Lira Burger",
-          description: "Site fictício de hamburgueria com cardápio interativo, design moderno e animações. Desenvolvido com HTML, CSS e Tailwind CSS, explorando layout responsivo e experiência do usuário.",
+          description: "Site fictício de hamburgueria com cardápio interativo, design moderno e animações. Desenvolvido com HTML, CSS e Tailwind CSS, explorando layout responsivo e experiência do usuário. ⚠️ Lembrando: é um projeto fictício, não me encham de mensagens com pedidos que não serão entregues!! hahaha",
           tags: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
           github: "https://github.com/lirazn7/projeto-ficticio-hamburgueria",
+          live: "https://lira-burger.netlify.app/",
           gradient: "from-yellow-500/80 to-amber-900/80",
         },
         {
@@ -511,9 +512,10 @@ export const translations: Record<Locale, Translation> = {
         },
         {
           title: "Lira Burger",
-          description: "Fictional burger restaurant website with an interactive menu, modern design, and animations. Built with HTML, CSS, and Tailwind CSS, exploring responsive layout and user experience.",
+          description: "Fictional burger restaurant website with an interactive menu, modern design, and animations. Built with HTML, CSS, and Tailwind CSS, exploring responsive layout and user experience. ⚠️ Reminder: this is a fictional project — please don't flood me with orders that won't be delivered!! hahaha",
           tags: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
           github: "https://github.com/lirazn7/projeto-ficticio-hamburgueria",
+          live: "https://lira-burger.netlify.app/",
           gradient: "from-yellow-500/80 to-amber-900/80",
         },
         {
@@ -755,9 +757,10 @@ export const translations: Record<Locale, Translation> = {
         },
         {
           title: "Lira Burger",
-          description: "Sitio web ficticio de hamburguería con menú interactivo, diseño moderno y animaciones. Desarrollado con HTML, CSS y Tailwind CSS, explorando diseño responsivo y experiencia de usuario.",
+          description: "Sitio web ficticio de hamburguería con menú interactivo, diseño moderno y animaciones. Desarrollado con HTML, CSS y Tailwind CSS, explorando diseño responsivo y experiencia de usuario. ⚠️ Recordatorio: es un proyecto ficticio, ¡¡no me llenen de mensajes con pedidos que no serán entregados!! jajaja",
           tags: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
           github: "https://github.com/lirazn7/projeto-ficticio-hamburgueria",
+          live: "https://lira-burger.netlify.app/",
           gradient: "from-yellow-500/80 to-amber-900/80",
         },
         {
